@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>S.R.P. d.o.o. | Racunovodske storitve in svetovanje</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+        <script src="js/script.js"></script>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("body").css("display", "none");
+                $("body").fadeIn(2000);
+             
+                $("a.transition").click(function(event){
+                    event.preventDefault();
+                    linkLocation = this.href;
+                    $("body").fadeOut(2000, redirectPage);
+                });
+         
+                function redirectPage() {
+                    window.location = linkLocation;
+                    }
+            });
+        </script>
+        
+    </head>
+
+    <body class="entrance">
+        <div class="entrancebutton">
+            <a class="transition" href="main.html">Vstopi</a>
+        </div>
+        
+        <div class="sideTop">S.R.P. d.o.o. | Racunovodske storitve in svetovanje</div>
+    </body> 
+
+</html>
