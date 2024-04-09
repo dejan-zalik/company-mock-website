@@ -1,2 +1,1 @@
-# srp-website
-company website
+mock website for an accounting company
